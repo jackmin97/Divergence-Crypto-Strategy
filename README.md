@@ -37,14 +37,14 @@ Combine the two signals to create a signal column.
 ### 6. Compute the cumulative strategy return
 The procedure for calculating the strategy performance is:
 
-Candle 1 Closes ---> Indicators are calculated and the signal is generated
+Candle 1 Closes ---> Indicators are calculated and the signal is generated;
 
-Candle 2 Opens ---> Signal generated at the end of the previous candle is used to enter the trade
+Candle 2 Opens ---> Signal generated at the end of the previous candle is used to enter the trade;
 
-Candle 2 Closes ---> Indicators are calculated and the new signal is generated
+Candle 2 Closes ---> Indicators are calculated and the new signal is generated;
 
-Candle 3 Opens ---> The returns for the position taken at the Open of candle 2 is calculated and the process is repeated
+Candle 3 Opens ---> The returns for the position taken at the Open of candle 2 is calculated and the process is repeated.
 
-Assign the previous candles' signal as TradeSignal
+Assign the previous candles' signal as TradeSignal.
 
-Calculate the returns of each candle using the Open prices of the next candle and open price of the current candle
+Calculate the returns of each candle using the Open prices of the next candle and open price of the current candle.
